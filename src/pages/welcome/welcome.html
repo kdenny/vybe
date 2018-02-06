@@ -1,0 +1,53 @@
+<ion-header no-border>
+  <ion-navbar color="orange" hideBackButton style="min-height: 58px;">
+    <ion-buttons start>
+      <!--<button ion-button icon-only (click)="goToMe()" style="background-color: orange;">-->
+        <!--<ion-icon name="md-person" color="turq"></ion-icon>-->
+      <!--</button>-->
+    </ion-buttons>
+
+    <ion-title>
+      <h1 style="color: #40e0d0; margin-top: 5px;">Vybe</h1>
+    </ion-title>
+
+    <ion-buttons end>
+      <!--<button ion-button icon-only (click)="goToMessaging()" style="background-color: orange;">-->
+        <!--<ion-icon name="ios-chatbubbles" color="turq"></ion-icon>-->
+      <!--</button>-->
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--<ion-card>-->
+
+    <!--<ion-card-content class="text-center">-->
+      <!--Meet and connect with <br> local musicians and artists-->
+    <!--</ion-card-content>-->
+
+  <!--</ion-card>-->
+  <div layout vertical center>
+    <ion-slides #slides pager flex style="max-height: 50vh;">
+      <ion-slide *ngFor="let slide of introSlides" style="max-height: 50vh;">
+        <h3 class="font-thin" [innerHTML]="slide.title"></h3>
+        <img [src]="slide.image" style="max-height: 40vh;">
+      </ion-slide>
+    </ion-slides>
+
+    <div class="text-center" style="padding-top: 5vh;">
+      <div>
+        <button ion-button round class="btn-tinder-login m-b-sm" (click)="goToSwipe()">LOG IN WITH FACEBOOK</button>
+      </div>
+      <div>
+        <button ion-button round small color="muted" outline (click)="goToSwipe()">LOG IN WITH PHONE NUMBER</button>
+      </div>
+
+      <div class="wrapper text-muted">
+        <p>We don't post anything to Facebook.
+          <br>
+          By signing in, you agree to our <span class="text-u-l">Terms of Service</span> and <span class="text-u-l">Privacy Policy</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</ion-content>

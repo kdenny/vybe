@@ -1,0 +1,112 @@
+<ion-header no-border class="header-shadow">
+  <ion-navbar color="white">
+    <ion-title>Tinder Plus</ion-title>
+
+    <ion-buttons end>
+      <button ion-button clear color="danger" (click)="close()">
+        Done
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="bg-custom">
+  <div class="m-t-sm m-b-sm tinder-plus-banner">
+    <img src="assets/img/plus/tinder_plus_banner.png" alt="">
+    <div class="cta">
+      <div class="text-muted">
+        POWER ON
+      </div>
+      <button ion-button color="danger" round>
+        <b>Get Tinder Plus</b>
+      </button>
+    </div>
+  </div>
+
+  <ion-list class="m-b-sm">
+    <ion-item text-wrap>
+      <ion-thumbnail item-start>
+        <img src="assets/img/plus/tinder_plus_icon_1.png">
+      </ion-thumbnail>
+      <h2>Unlimited Right Swipes</h2>
+      <p>Swipe as much as you like</p>
+    </ion-item>
+    <ion-item text-wrap>
+      <ion-label>
+        Unlimited Likes
+        <p>Give me the ability to like as many people as I want</p>
+      </ion-label>
+      <ion-toggle color="danger" checked="true"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="m-b-sm">
+    <ion-item text-wrap>
+      <ion-thumbnail item-start>
+        <img src="assets/img/plus/tinder_plus_icon_2.png">
+      </ion-thumbnail>
+      <h2>Skip The Line</h2>
+      <p>Be the top profile in your area for 30 minutes to get more matches</p>
+    </ion-item>
+    <ion-item text-wrap>
+      <ion-label>
+        Tinder Boost
+        <p>Give me 1 free Boost every month</p>
+      </ion-label>
+      <ion-toggle color="danger" checked="false"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="m-b-sm">
+    <ion-item text-wrap>
+      <ion-thumbnail item-start>
+        <img src="assets/img/plus/tinder_plus_icon_3.png">
+      </ion-thumbnail>
+      <h2>Control Who You See</h2>
+      <p>It's simple now to choose the type of people you want to see on Tinder</p>
+    </ion-item>
+    <ion-item text-wrap>
+      Balanced Recommendations
+      <p>See the most relevant people to you (default setting)</p>
+      <ion-icon item-end color="danger" name="md-checkmark"></ion-icon>
+    </ion-item>
+    <ion-item text-wrap>
+      Recently Active
+      <p>See the most recently active people first</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="m-b-sm">
+    <ion-item text-wrap>
+      <ion-thumbnail item-start>
+        <img src="assets/img/plus/tinder_plus_icon_4.png">
+      </ion-thumbnail>
+      <h2>Control Who Sees You</h2>
+      <p>Only be shown to certain types of people on Tinder</p>
+    </ion-item>
+    <ion-item text-wrap>
+      Standard
+      <p>Only be shown to certain types of people for individual recommendations</p>
+      <ion-icon item-end color="danger" name="md-checkmark"></ion-icon>
+    </ion-item><ion-item text-wrap>
+      Only People I've Liked
+      <p>Only people I've right swiped will see me</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item text-wrap>
+      <ion-thumbnail item-start>
+        <img src="assets/img/plus/tinder_plus_icon_5.png">
+      </ion-thumbnail>
+      <h2>Passport To Any Location</h2>
+      <p>Match with people all around the world. Paris. Los Angeles. Sydney. Go!</p>
+    </ion-item>
+    <button ion-item>
+      Location
+      <div item-end>Singapore</div>
+    </button>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,16 @@
+page-settings {
+  .button-superlike, .button-star {
+    border-radius: 999em;
+    box-shadow: 0 4px 9px 0 rgba(213,218,224,.3);
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    ion-icon {
+      font-weight: 700;
+    }
+  }
+
+  .line-merge-down .item-inner {
+    border-bottom: none !important;
+  }
+}

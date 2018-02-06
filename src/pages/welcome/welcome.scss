@@ -1,0 +1,23 @@
+page-welcome {
+  .swiper-wrapper {
+    padding-bottom: 16px
+  }
+
+  .swiper-pagination-bullet-active {
+    background: color($colors, danger);
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 5px;
+  }
+
+  button[small] {
+    padding: 16px 2.6em
+  }
+
+  .btn-tinder-login {
+    padding: 16px 3em;
+    font-weight: 700;
+    background: linear-gradient(260deg,#337eb9,#384499);
+  }
+}

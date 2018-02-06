@@ -1,0 +1,212 @@
+<ion-header no-border>
+  <ion-navbar color="white">
+    <ion-title>Settings</ion-title>
+
+    <ion-buttons end>
+      <button ion-button clear color="danger" (click)="close()">
+        Done
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="bg-custom">
+  <ion-card class="card-custom text-center wrapper">
+    <div class="text-xl font-bold">
+      <ion-icon name="md-flame" color="gold"></ion-icon>
+      tinder
+      <span class="text-xs" ion-text color="gold">GOLD</span>
+    </div>
+    <div color="muted" ion-text>
+      Unlock Our Most Exclusive Features
+    </div>
+  </ion-card>
+
+  <ion-card class="card-custom text-center wrapper">
+    <div class="text-xl font-bold">
+      <ion-icon name="md-flame" color="danger"></ion-icon>
+      tinder
+      <span ion-text color="danger">+</span>
+    </div>
+    <div color="muted" ion-text>
+      Unlimited Likes & More!
+    </div>
+  </ion-card>
+
+  <ion-row>
+    <ion-col col-6>
+      <div class="card-custom text-center wrapper-sm m-l-sm">
+        <button ion-button color="white" class="button-superlike">
+          <ion-icon name="ios-flash" color="superlike"></ion-icon>
+        </button>
+        <div class="font-bold" ion-text color="superlike">
+          Get Boosts
+        </div>
+      </div>
+    </ion-col>
+    <ion-col col-6>
+      <div class="card-custom text-center wrapper-sm m-r-sm">
+        <button ion-button color="white" class="button-star">
+          <ion-icon name="md-star" color="star"></ion-icon>
+        </button>
+        <div class="font-bold" ion-text color="star">
+          Get Super Likes
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-list>
+    <ion-list-header>
+      DISCOVERY SETTINGS
+    </ion-list-header>
+    <button ion-item>
+      Location
+      <ion-note item-end>
+        My Current Location
+        <br>
+        <span class="text-xs">Singapore</span>
+      </ion-note>
+    </button>
+    <ion-item class="line-merge-down">
+      Maximum Distance
+      <ion-note item-end>
+        {{distance}}km
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-range min="2" max="160" [(ngModel)]="distance" color="danger"></ion-range>
+    </ion-item>
+    <button ion-item>
+      Gender
+      <ion-note item-end>
+        Women
+      </ion-note>
+    </button>
+    <ion-item class="line-merge-down">
+      Age Range
+      <ion-note item-end>
+        {{ageRange.lower}}-{{ageRange.upper}}
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-range dualKnobs="true" [(ngModel)]="ageRange" min="18" max="65" color="danger"></ion-range>
+    </ion-item>
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-item>
+      <ion-label>Show me on Tinder</ion-label>
+      <ion-toggle color="danger" checked="true"></ion-toggle>
+    </ion-item>
+    <div class="padder text-muted text-xs m-t-xs">
+      While turned off, you will not be shown in the card stack. You can still see and chat with your matches.
+    </div>
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-list-header>
+      WEB PROFILE
+    </ion-list-header>
+    <button ion-item>
+      Username
+      <ion-note item-end>
+        Claim yours
+      </ion-note>
+    </button>
+    <div class="padder text-muted text-xs m-t-xs">
+      Create a public Username. Share your Username. Have people all over the world swipe you on Tinder.
+    </div>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      NOTIFICATIONS
+    </ion-list-header>
+    <ion-item>
+      <ion-label>New Matches</ion-label>
+      <ion-toggle color="danger" checked="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Messages</ion-label>
+      <ion-toggle color="danger" checked="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Message Likes</ion-label>
+      <ion-toggle color="danger" checked="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Super Likes</ion-label>
+      <ion-toggle color="danger" checked="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>In-App Vibrations</ion-label>
+      <ion-toggle color="danger" checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>In-App Sounds</ion-label>
+      <ion-toggle color="danger" checked="true"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-item text-center class="m-b-sm">
+      Restore Purchases
+    </ion-item>
+    <ion-item text-center>
+      Share Tinder
+    </ion-item>
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-list-header>
+      CONTACT US
+    </ion-list-header>
+    <button ion-item>
+      Help & Support
+    </button>
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-list-header>
+      COMMUNITY
+    </ion-list-header>
+    <button ion-item>
+      Community Guidelines
+    </button>
+    <button ion-item>
+      Safety Tips
+    </button>
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-list-header>
+      LEGAL
+    </ion-list-header>
+    <button ion-item>
+      Privacy Policy
+    </button>
+    <button ion-item>
+      Terms of Service
+    </button>
+    <button ion-item>
+      Licenses
+    </button>
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-item text-center class="m-b-sm">
+      Log Out
+    </ion-item>
+    <div class="text-center m-b">
+      <div class="thumb-sm">
+        <img src="assets/img/logo.png" alt="">
+      </div>
+      <div>Version 8.4.0</div>
+    </div>
+    <ion-item text-center>
+      Delete Account
+    </ion-item>
+  </ion-list>
+</ion-content>
