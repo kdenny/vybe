@@ -14,7 +14,8 @@ import { Observable } from 'rxjs/Observable';
 export class Api {
   //url: string = 'http://packagerat.pythonanywhere.com/';
   parrotUrl: string = 'http://parrotapp.pythonanywhere.com/';
-  url: string = 'http://127.0.0.1:8000/';
+  //url: string = 'http://127.0.0.1:8000/';
+  url: string = 'http://47c692ee.ngrok.io/';
   packages;
   newPackages = null;
   scan = null;
