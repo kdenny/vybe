@@ -63,7 +63,6 @@ export class ExplorePage {
     this.imgUrl = 'assets/img/deezy.png';
 
   }
-
   // Called whenever we drag an element
   onItemMove(element, x, y, r) {
     let nope = element.querySelector('.stamp-nope');
