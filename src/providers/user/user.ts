@@ -97,7 +97,7 @@ export class User {
             this.token = token;
             console.log(this.token);
             this.isLoggedIn = true;
-            this.api.addHeaders(token);
+            //this.api.addHeaders(token);
             this.currentUsername = accountInfo.username;
             console.log(this.currentUsername)
             // store username and jwt token in local storage to keep user logged in between page refreshes
